@@ -1,5 +1,74 @@
 body {
-  background: #16ffbd;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  @media (max-width: 600px) {
+    background: #16ffbd;
+    font-family: "Nanum Gothic", sans-serif;
+    width: 100vw;
+  }
+}
+
+ul {
+  display: none;
+  padding: 0px;
+}
+
+input:checked ~ ul {
+  display: block;
+}
+input {
+  display: none;
+}
+label {
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 8px;
+  width: 30px;
+  height: 30px;
+  line-height: 50px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+li {
+  align-content: center;
+  display: block;
+  background: transparent;
+  margin: 0;
+  padding: 10px;
+  border-radius: 15px;
+  width: 80px;
+  list-style: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0);
+}
+header {
+  justify-content: center;
+  display: flex;
+  img {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.section__main--text {
+  text-align: center;
+  margin: 50px;
+  article {
+    padding: 0px;
+  }
+}
+.post {
+  li {
+    padding: 0px;
+  }
+  border: 0px solid #ccc;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  img {
+    padding: 0px;
+  }
+}
+.container__color {
+  background-color: pink;
+  align-content: center;
+  padding: 50px;
 }
