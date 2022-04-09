@@ -1,7 +1,6 @@
 {
   "name": "challenge-1",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +16,9 @@
   },
   "homepage": "https://github.com/Maicolt401/202204-W1CHWE-maicol-torres-albert-sagol#readme",
   "dependencies": {
+    "sass": "^1.50.0",
     "scss": "^0.2.4"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }

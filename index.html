@@ -10,6 +10,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style/style.css" />
     <title>Panic</title>
   </head>
 
@@ -24,48 +25,71 @@
         </ul>
         <img src="logo.png" alt="logo panic" />
       </nav>
-      <!--<button></button>-->
-      <img src="" alt="" />
-      <img src alt="" />
+      <section>
+        <div class="header__blok--media">
+          <i> <img src="images/home/media/play.png" alt="simbolo play" /></i>
+          <span>Lorem</span>
+          <span>Lorem</span>
+        </div>
+        <div>
+          <i>
+            <img
+              class="icon--play"
+              src="images/home/media/play.png"
+              alt="simbolo play"
+          /></i>
+          <span>VIEW</span>
+          <span>SHOWREEL</span>
+        </div>
+      </section>
     </header>
 
-    <section>
+    <section class="section__main--text">
       <article><h1>LOREN IPSUM DOLOR SIT</h1></article>
       <article>
         AMET, CONSECTETUR ADIPISICI ELIT, SED EIUSMOD TEMPORD INCIDUNT UT LABORE
         ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENIAM. QUIS NOSTRUD
       </article>
       <article>*</article>
-    </section>
-
-    <section>
+      <!--un div de dos iconos posibles sobrepuestos o dos div por separados-->
       <h1>LOREM IPSUM</h1>
       <a href="">DOLOR SIT</a>
+    </section>
+
+    <section class="conatiner__main--photos">
       <article>
-        <img src="" alt="muñequita saludando" />
+        <img src="images/home/media/media07.jpg" alt="muñequita saludando" />
         <p>Lorem ipsum dolor sit amet</p>
       </article>
       <article>
-        <img src="" alt="pizzero horneando la pizza" />
+        <img
+          src="images/home/media/media09.jpg"
+          alt="pizzero horneando la pizza"
+        />
         <p>Lorem ipsum dolor sit amet consectetur</p>
       </article>
       <article>
-        <img src="" alt="chica mirando un vestido" />
+        <img
+          src="images/home/media/media10.jpg"
+          alt="chica mirando un vestido"
+        />
         <p>Lorem ipsum</p>
       </article>
     </section>
-    <h4></h4>
 
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>Works</li>
-        <li>About</li>
-        <li>Contac</li>
-      </ul>
-    </nav>
+    <div>
+      <h4>Lorem <span class="text__modification">Ipsum </span>Dolor</h4>
+      <nav class="navigation__mobile--bot">
+        <ul>
+          <li>Home</li>
+          <li>Works</li>
+          <li>About</li>
+          <li>Contac</li>
+        </ul>
+      </nav>
+    </div>
 
-    <footer>
+    <footer class="conatiner__footer">
       <section>
         <h5>Lorem ipsum</h5>
         <p>dolor sit amet, consecutetur</p>
@@ -79,6 +103,7 @@
       </section>
 
       <section>
+        <!--hijos anidados para hacer diseño y asi no dejar clases-->
         <h5>Loren ipsum</h5>
         <p>dolor sit amet. consecutetur</p>
         <h5>Loren ipsum</h5>
