@@ -38,6 +38,7 @@ body {
 }
 footer {
   background-color: var(--black);
+  padding-top: 40px;
   flex-direction: column;
   display: flex;
   align-content: center;
@@ -60,6 +61,7 @@ footer {
       flex-direction: row;
       justify-content: center;
       gap: 20px;
+      padding: 20px;
 
       & i {
         fill: var(--green);
