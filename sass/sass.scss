@@ -1,5 +1,11 @@
+:root {
+  --green: #16ffbd;
+  --black: #080d14;
+  --white: #fff;
+}
+
 body {
-  background: #16ffbd;
+  background: var(--green);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -14,10 +20,6 @@ body {
     text-align: center;
     padding: 20px;
     line-height: 35px;
-
-    & i {
-      fill: #080d14;
-    }
   }
 }
 
@@ -32,5 +34,36 @@ body {
     text-align: center;
     padding: 20px;
     line-height: 35px;
+  }
+}
+footer {
+  background-color: var(--black);
+  flex-direction: column;
+  display: flex;
+  align-content: center;
+
+  & section {
+    flex-direction: column;
+    & h5 {
+      color: var(--white);
+      text-align: center;
+    }
+    & p {
+      color: var(--green);
+      text-align: center;
+      padding: 20px;
+      line-height: 35px;
+    }
+    & div {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+
+      & i {
+        fill: var(--green);
+      }
+    }
   }
 }
