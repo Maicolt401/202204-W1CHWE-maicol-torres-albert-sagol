@@ -74,6 +74,25 @@ li {
   align-content: center;
   padding: 50px;
 }
+
+.container__main--photos {
+  & img {
+    width: 100vw;
+  }
+}
+@media (min-width: 600px) {
+  .container__main--photos {
+    & article {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+    }
+    & img {
+      width: 33.333vw;
+      height: 100%;
+    }
+  }
+}
 header {
   display: flex;
   flex-direction: row;
