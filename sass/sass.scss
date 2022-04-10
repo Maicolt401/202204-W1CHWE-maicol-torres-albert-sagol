@@ -78,8 +78,14 @@ li {
 }
 @media (min-width: 600px) {
   .container__main--photos {
+    & article {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+    }
     & img {
-      width: 33.3vw;
+      width: 33.333vw;
+      height: 100%;
     }
   }
 }
