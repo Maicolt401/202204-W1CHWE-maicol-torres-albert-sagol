@@ -6,8 +6,8 @@
 }
 
 body {
+  background: var(--green);
   @media (max-width: 600px) {
-    background: #16ffbd;
     font-family: "Nanum Gothic", sans-serif;
     width: 100vw;
   }
@@ -54,14 +54,17 @@ li {
     padding: 0px;
   }
 }
-.images {
+
+.container {
+  width: 100vw;
+  padding: 0px;
   .post {
-    border: 0px solid #ccc;
+    border: solid #ccc;
     margin: 0px;
     padding: 0px;
-    width: 100%;
-    p {
-      text-align: center;
+    img {
+      margin: 0px;
+      padding: 0px;
     }
   }
 }
@@ -71,6 +74,7 @@ li {
   align-content: center;
   padding: 50px;
 }
+
 .container__main--photos {
   & img {
     width: 100vw;
@@ -89,7 +93,6 @@ li {
     }
   }
 }
-
 header {
   display: flex;
   flex-direction: row;
@@ -149,6 +152,12 @@ footer {
   display: flex;
   align-content: center;
 
+  & .container__footer--virulilla {
+    color: var(--green);
+    padding-top: 0px;
+    margin: 0px;
+  }
+
   & section {
     flex-direction: column;
     & h5 {
@@ -168,10 +177,15 @@ footer {
       justify-content: center;
       gap: 20px;
       padding: 20px;
-
-      & i {
-        fill: var(--green);
-      }
+    }
+    & .footer_link {
+      color: var(--white);
+    }
+    & .virulilla {
+      padding: 0px;
+    }
+    & i {
+      fill: var(--green);
     }
   }
 }
