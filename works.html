@@ -10,29 +10,27 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style/sass.css" />
     <title>Panic</title>
   </head>
 
   <body>
     <header>
-      <div>
-        <button></button>
-        <span> works</span>
-      </div>
       <nav>
+        <input type="checkbox" id="menu" />
+        <label for="menu">☰</label>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="works.html">Works</a></li>
-          <li><a href="about.html">About</a></li>
-          <li>Contact</li>
+          <li><a href="Home">Home</a></li>
+          <li><a href="works">Works</a></li>
+          <li><a href="About">About</a></li>
+          <li><a href="About">Contact</a></li>
         </ul>
       </nav>
-      <i>
-        <img src="/logo.png" alt="Logo de Panic" />
-      </i>
+      <i> <img src="logo.png" alt="logo panic" /> </i>
+      <span> works</span>
     </header>
 
-    <section container__main--photos>
+    <section class="container__main--photos">
       <article class=".row">
         <i class=".col-12 .col-sm-4">
           <img

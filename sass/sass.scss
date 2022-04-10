@@ -46,15 +46,7 @@ li {
   list-style: none;
   border-bottom: 1px solid rgba(128, 128, 128, 0);
 }
-header {
-  justify-content: center;
-  display: flex;
-  img {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-  }
-}
+
 .section__main--text {
   text-align: center;
   margin: 50px;
@@ -80,6 +72,23 @@ header {
   background-color: var(--pink);
   align-content: center;
   padding: 50px;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  & nav {
+    padding-left: 5px;
+  }
+  & img {
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+  & span {
+    padding-top: 10px;
+    padding-right: 25px;
+  }
 }
 
 .about-main__text--upper {
