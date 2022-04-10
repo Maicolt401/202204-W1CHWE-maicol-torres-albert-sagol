@@ -62,20 +62,18 @@ header {
     padding: 0px;
   }
 }
-.post {
-  border: 0px solid #ccc;
-  margin: 0px;
-  padding: 0px;
-  p {
-    text-align: center;
-  }
-  li {
+.images {
+  .post {
+    border: 0px solid #ccc;
+    margin: 0px;
     padding: 0px;
-  }
-  img {
-    padding: 0px;
+    width: 100%;
+    p {
+      text-align: center;
+    }
   }
 }
+
 .container__color {
   background-color: var(--pink);
   align-content: center;
@@ -108,6 +106,14 @@ header {
     line-height: 35px;
   }
 }
+.container__navigation--mobile {
+  section {
+    background: var(--black);
+    color: var(--green);
+    text-align: center;
+  }
+}
+
 footer {
   background-color: var(--black);
   padding-top: 40px;
