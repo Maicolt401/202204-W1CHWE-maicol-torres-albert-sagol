@@ -71,6 +71,19 @@ li {
   align-content: center;
   padding: 50px;
 }
+.container__main--photos {
+  & img {
+    width: 100vw;
+  }
+}
+@media (min-width: 600px) {
+  .container__main--photos {
+    & img {
+      width: 33.3vw;
+    }
+  }
+}
+
 header {
   display: flex;
   flex-direction: row;
