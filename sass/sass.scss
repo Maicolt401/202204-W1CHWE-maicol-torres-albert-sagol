@@ -104,6 +104,10 @@ li {
   }
 }
 @media (min-width: 600px) {
+  .video {
+    display: none;
+    visibility: none;
+  }
   .container__main--photos {
     & article {
       display: flex;
