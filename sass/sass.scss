@@ -49,9 +49,16 @@ li {
 
 .section__main--text {
   text-align: center;
+  display: flex;
+  flex-direction: column;
   margin: 50px;
   article {
     padding: 0px;
+  }
+
+  & i {
+    fill: var(--black);
+    padding: 20px;
   }
 }
 
@@ -152,11 +159,35 @@ header {
     justify-content: space-around;
   }
 }
-.container__navigation--mobile {
-  section {
-    background: var(--black);
+section.container__navigation--mobile {
+  background: var(--black);
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & h4 {
     color: var(--green);
     text-align: center;
+  }
+  & i {
+    fill: var(--green);
+  }
+  & nav {
+    color: var(--white);
+    font-size: 15px;
+
+    & ul {
+      display: contents;
+      & li {
+        width: auto;
+        & a {
+          font-size: 30px;
+          color: var(--white);
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
 
