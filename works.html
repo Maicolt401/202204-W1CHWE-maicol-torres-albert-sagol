@@ -18,16 +18,12 @@
     <header>
       <nav>
         <input type="checkbox" id="menu" />
-        <label for="menu">☰</label>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="works.html">Works</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="about.html">Contact</a></li>
-        </ul>
+        <label for="menu" id="menu__footer">
+          <a href="#menu-footer" title="menu-footer">☰ </a>
+        </label>
       </nav>
       <i> <img src="logo.png" alt="logo panic" /> </i>
-      <span> works</span>
+      <span> Works</span>
     </header>
 
     <section class="container__main--photos">
@@ -215,7 +211,8 @@
       </article>
     </section>
     <section class="container__navigation--mobile">
-      <h4>Lorem ipsum dolor</h4>
+      <h4>Lorem <span>ipsum</span> dolor</h4>
+      <a name="menu-footer"></a>
       <i>
         <svg
           version="1.1"
@@ -239,7 +236,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="works.html">Works</a></li>
+          <li><a class="actual-page" href="works.html">Works</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
       </nav>
