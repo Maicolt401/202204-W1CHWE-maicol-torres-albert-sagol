@@ -24,16 +24,26 @@
 
   <body>
     <div>
-      <header>
-        <nav>
-          <input type="checkbox" id="menu" />
-          <label for="menu" id="menu__footer">
-            <a href="#menu-footer" title="menu-footer">☰ </a>
-          </label>
-        </nav>
-        <i> <img src="logo.png" alt="logo panic" /> </i>
-        <span> Home</span>
-      </header>
+      <nav class="element-navigation--mobile">
+        <input type="checkbox" id="menu" />
+        <label for="menu" id="menu__footer">
+          <a href="#menu-footer" title="menu-footer">☰ </a>
+        </label>
+      </nav>
+      <nav class="element-navigation--desktop">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="works.html">Works</a></li>
+        </ul>
+      </nav>
+      <i> <img src="logo.png" alt="logo panic" /> </i>
+      <nav class="element-navigation--desktop">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#menu-footer">Contact</a></li>
+        </ul>
+      </nav>
+      <span class="element-navigation--mobile">Home</span>
 
       <section class="container">
         <div class="image__photos">
