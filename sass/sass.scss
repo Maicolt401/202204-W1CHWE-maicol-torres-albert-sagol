@@ -9,10 +9,14 @@ body {
   background: var(--green);
   @media (max-width: 600px) {
     font-family: "Nanum Gothic", sans-serif;
-    width: 100vw;
   }
 }
-
+a {
+  text-decoration: none;
+}
+.container .image__photos {
+  width: 100vw;
+}
 ul {
   display: none;
   padding: 0px;
