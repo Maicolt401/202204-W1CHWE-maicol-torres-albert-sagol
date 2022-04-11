@@ -121,7 +121,7 @@ header {
 
 .about-main__text--upper {
   align-content: center;
-
+  padding: 20px;
   & h5 {
     text-align: center;
   }
@@ -136,6 +136,7 @@ header {
   align-content: center;
   flex-direction: column;
   display: flex;
+  padding: 20px;
   & h5 {
     text-align: center;
   }
@@ -148,10 +149,12 @@ header {
 @media (min-width: 600px) {
   .about-main__text--upper {
     display: flex;
-    max-width: 600px;
-    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+
     & article {
-      display: flex;
+      max-width: 600px;
+      align-self: center;
       align-content: center;
     }
   }
@@ -170,6 +173,10 @@ section.container__navigation--mobile {
   & h4 {
     color: var(--green);
     text-align: center;
+    & span {
+      text-decoration: line-through;
+      text-decoration-color: var(--pink);
+    }
   }
   & i {
     fill: var(--green);
@@ -186,8 +193,19 @@ section.container__navigation--mobile {
           font-size: 30px;
           color: var(--white);
           text-decoration: none;
+          &.actual-page {
+            color: var(--pink);
+            text-decoration: line-through;
+          }
         }
       }
+    }
+  }
+}
+@media (min-width: 600px) {
+  section.container__navigation--mobile {
+    & nav {
+      display: none;
     }
   }
 }
