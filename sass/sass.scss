@@ -8,11 +8,22 @@
 body {
   background: var(--green);
   @media (max-width: 600px) {
+    .video {
+      display: none;
+    }
     font-family: "Nanum Gothic", sans-serif;
   }
 }
 a {
   text-decoration: none;
+}
+.car {
+  height: 200px;
+
+  img {
+    width: auto;
+    max-height: 100%;
+  }
 }
 .container .image__photos {
   width: 100vw;
